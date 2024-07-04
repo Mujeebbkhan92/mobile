@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Open Links</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Example links -->
+    <a href="https://www.bing.com/search?q=got&form=ANNTH1&refig=A12FA46850684B7E9E4A7F5392CAF6A7&pc=U531">link1</a><br>
+    <a href="https://www.bing.com/search?q=ielts&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=ielt&sc=11-4&sk=&cvid=518D7A1D213C4BC289802C2B02304E44&ghsh=0&ghacc=0&ghpl=">link2</a><br>
+    <a href="https://www.bing.com/search?q=samsung%20m04e&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=samsung%20m04&sc=11-11&sk=&cvid=1C7EF291AAE044A493A4454D07EF69D8&ghsh=0&ghacc=0&ghpl=">link3</a><br>
+    <a href="https://www.bing.com/search?q=major%20project%20php&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=major%20project%20php&sc=10-17&sk=&cvid=67D47393861145F28BAF6D1929EE175C&ghsh=0&ghacc=0&ghpl=">link4</a><br>
+    <a href="https://www.bing.com/search?q=java+spring+boot&qs=AS&pq=java+spring&sc=10-11&cvid=E078B7FEBBCB4A728C2A40CFE7E53149&FORM=QBRE&sp=1&ghc=1&lq=0">link5</a><br>
+    <a href="https://www.bing.com/search?q=jim+cramer&filters=ufn%3a%22Jim+Cramer%22+sid%3a%22fbdf4273-67b3-9ad7-89ed-851921755241%22&asbe=HS&qs=MB&pq=j&sk=HS2&sc=10-1&cvid=FA028F8F1AA248CC88CD8AC0C54A753F&FORM=QBRE&sp=3&lq=0">link6</a><br>
+    <a href="https://www.bing.com/search?q=jim+cramer&filters=ufn%3a%22Jim+Cramer%22+sid%3a%22fbdf4273-67b3-9ad7-89ed-851921755241%22&asbe=HS&qs=MB&pq=j&sk=HS2&sc=10-1&cvid=FA028F8F1AA248CC88CD8AC0C54A753F&FORM=QBRE&sp=3&lq=0">link7</a><br>
+    <a href="https://www.bing.com/search?q=wheel%20of%20time&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=wheel%20of%20tim&sc=11-12&sk=&cvid=CE6C5387E6B8441F980636DE2334F53A&ghsh=0&ghacc=0&ghpl=">link8</a><br>
+    <a href="https://www.bing.com/search?q=euro&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=euro&sc=11-4&sk=&cvid=6D67A1A72B89407089E33AABEC508C5C&ghsh=0&ghacc=0&ghpl=">link9</a><br>
+    <a href="https://www.bing.com/search?q=world%20cup%20parade&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=world%20cup%20parad&sc=11-15&sk=&cvid=04D5B6C2395E4F348069B99CE28C8BFC&ghsh=0&ghacc=0&ghpl=">link10</a><br>
+    <a href="https://www.bing.com/search?q=perl%20language&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=perl%20languag&sc=11-12&sk=&cvid=0B782272724C4D3DAE56EB1358752F16&ghsh=0&ghacc=0&ghpl=">link11</a><br>
+    <a href="https://www.bing.com/search?q=ssc&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=ssc&sc=11-3&sk=&cvid=0A3721323D50462FA135A304B08E6984&ghsh=0&ghacc=0&ghpl=">link12</a><br>
+    <a href="https://www.bing.com/search?q=php+full+form&qs=LS&pq=php+&sk=LS2&sc=10-4&cvid=5D6E95BB6D074E38B6E066A73C6F0F86&FORM=QBRE&sp=3&ghc=1&lq=0">link13</a><br>
+    <a href="https://www.bing.com/search?q=kalki&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=kalki&sc=11-5&sk=&cvid=2543783C1EC7470491C1F7193C61C997&ghsh=0&ghacc=0&ghpl=">link14</a><br>
+    <a href="https://www.bing.com/search?q=jbl%20spe&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=jbl%20spe&sc=11-7&sk=&cvid=DA0CBF417F0349859AC185FDADF914E4&ghsh=0&ghacc=0&ghpl=">link15</a><br>
+    <a href="https://www.bing.com/search?q=motorola&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=motorol&sc=11-7&sk=&cvid=35B883C19EF748A4B596607C95178115&ghsh=0&ghacc=0&ghpl=">link16</a><br>
+    <a href="https://www.bing.com/search?q=rocky%20kgf&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=rocky%20kg&sc=11-8&sk=&cvid=A376E674A685403EAFDCCFAD49169656&ghsh=0&ghacc=0&ghpl=">link17</a><br>
+    <a href="https://www.bing.com/search?q=new+programming+languages+2024&qs=AS&pq=new+programmi&sc=10-13&cvid=4B383F0CDAC9462A8B53E3C103D8B977&FORM=QBRE&sp=1&ghc=1&lq=0">link18</a><br>
+    <a href="https://www.bing.com/search?q=dr+strange&form=ANNTH1&refig=B6CDF07CD9E44F51BDDE55437C279D50&pc=U531&sp=1&lq=0&qs=AS&pq=dr+strange&sc=10-10&cvid=b6cdf07cd9e44f51bdde55437c279d50">link19</a><br>
+    <a href="https://www.bing.com/search?q=full%20form%20of%20upsc&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=full%20form%20of%20ups&sc=11-16&sk=&cvid=76AFA2F420A544F4BD3F30A803C13BA7&ghsh=0&ghacc=0&ghpl=">link20</a><br>
+    <a href="https://www.bing.com/search?q=trending%20song&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=trending%20son&sc=11-12&sk=&cvid=7308ADC92667411CB4EF34E341897B2B&ghsh=0&ghacc=0&ghpl=">link21</a><br>
+    <!-- Add your 30 links here -->
+
+    <script>
+        const anchors = document.querySelectorAll('a');
+        let openTabDelay = 10000; // 10 seconds in milliseconds
+        let closeTabDelay = 15000; // 10 seconds in milliseconds
+
+        function openAndCloseTab(anchor, delay) {
+            setTimeout(() => {
+                let tab = window.open(anchor.href, '_blank');
+                anchor.classList.add('hidden'); // Hide the link after opening
+                setTimeout(() => {
+                    tab.close();
+                }, closeTabDelay);
+            }, delay);
+        }
+
+        anchors.forEach((anchor, index) => {
+            openAndCloseTab(anchor, index * openTabDelay);
+        });
+    </script>
+</body>
+</html>
